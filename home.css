@@ -1,0 +1,351 @@
+/* Style the navigation bar */
+.navbar {
+    background-color: #ffd700;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 1px 2px; */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+.logo img{
+    margin: 0;
+    padding: 0;
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+
+}
+@keyframes spin {
+    0% { transform: rotateY(00deg); }
+    100% { transform: rotateY(360deg); }
+  }
+
+
+.nav-links {
+    list-style-type: none;
+    
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    font-size: larger;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: yellowgreen;
+    
+}
+
+
+/* Style the page content */
+.content {
+    padding: 20px;
+    color: #fff;
+}
+body {
+    /* background-color: #33ff57; */
+    background-image: url('https://images.pexels.com/photos/303383/pexels-photo-303383.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover; /* Adjust the size as needed */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    background-attachment: fixed; /* Keep the image fixed while scrolling */
+    
+}
+
+header {
+    text-align: center;
+    background-color: #007bffa6;
+    color: #fff;
+    padding: 18px;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    
+}
+
+header p {
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    animation: colorChange 3s infinite;
+}
+@keyframes colorChange {
+    0% {
+      color: #fff;
+    }
+    
+    25% {
+      color: #ffeb3b;
+    }
+    50% {
+      color: #4caf50;
+    }
+    75% {
+      color: #ff5722;
+    }
+    100% {
+      color: #fff;
+    }
+  }
+header p :hover{
+    transform: scale(1.5);
+}
+
+/* body {
+    background-color: #333; /* Set the background color of the page 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+} */
+
+body img{
+    margin-top: 20px;
+    margin-left: 40px;
+    animation: glow 5s infinite alternate;
+    justify-content: center;
+    align-items: center;/* 
+    height: 50rem;
+    margin: 20px;
+    background-color: #f0f0f0; */
+    border-radius: 50%; /* Makes the container round */
+    overflow: hidden; /* Clips the image to the rounded shape */
+    width: 20rem; /* Adjust the width and height as needed */
+    height: 20rem;
+    box-shadow: 0 0 10px rgba(59, 56, 56, 0.5); /* Optional: Add a shadow */
+
+}
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px rgba(184, 159, 58, 0.855);
+    }
+    25% {
+        box-shadow: 0 0 20px rgba(215, 202, 102, 0.9);
+    }
+    50% {
+        box-shadow: 0 0 40px rgba(168, 197, 48, 0.9);
+    }
+    75% {
+        box-shadow: 0 0 60px rgba(194, 37, 37, 0.9);
+    }
+    100% {
+        box-shadow: 0 0 80px rgba(10, 10, 10, 0.9);
+    }
+}
+
+.dot div {
+    display: flex;
+    flex-basis: auto;
+    width: 70px;
+    height: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #ffffff;
+    background-color: #ff5733; /* Set the color of the dot */
+    border-radius: 2%; /* Make it a circle */
+    animation: dotAnimation 2s infinite; /* Apply the animation */
+}
+
+
+@keyframes dotAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+        background-color: #33ff57; /* Change color halfway through */
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Set the button's background color */
+    color: #fff; /* Set text color */
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s; /* Add hover transition */
+    cursor: pointer;
+    
+}
+
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Set the button's background color */
+    color: #fff; /* Set text color */
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s; /* Add hover transition */
+    cursor: pointer;
+}
+.download-button:hover {  
+    background-color: #45a049; /* Change button color on hover */
+    transform: scale(1.05); /* Add scale animation on hover */
+    transform: rotate(30deg);
+}
+
+.Bflex{
+    display: flex;
+}
+
+.image{
+    width: 50%;
+    height: 50%;    
+    margin-left: 15rem;
+}
+
+footer {
+    background-color: #ffd700;
+    color: rgb(99%, 8.3%, 99%);
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.contact-icons {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-icons li {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+.contact-icons a {
+    text-decoration: none;
+    color: #fff;
+}
+/* ******************Skill/ Project CSS Code ******************** */
+header {
+    background-color: #333366;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+#skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.skill {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skill h2 {
+    margin-bottom: 0.5rem;
+}
+
+.skill-bar {
+    background-color: #4caf50;
+    height: 15px;
+    width: 0;
+    margin-top: 0.5rem;
+    transition: width 1s ease-in-out;
+}
+
+#text-container {
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    /* position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+     */
+     color: #ffffff;
+     height: 20px;
+     width: 500px;
+     animation: colorChangee 3s infinite;
+  }
+  @keyframes colorChangee {
+    0% {
+      color: #fff;
+    }
+    
+    25% {
+      color: #ffeb3b;
+    }
+    50% {
+      color: #4caf50;
+    }
+    75% {
+      color: #ff5722;
+    }
+    100% {
+      color: black;
+    }
+  }
+/* Example of a media query for mobile devices */
+@media only screen and (max-width: 600px) {
+    /* CSS rules for mobile devices */
+    .container {
+        width: 100%;
+        max-width: 1200px; /* Optional: Set a maximum width */
+        margin: 0 auto; /* Center the container */
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+  }
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* CSS rules for tablet devices */
+    body {
+      font-size: 16px; /* Adjust font size for tablets */
+    }
+  
+    .container {
+      width: 80%; /* Adjust the width of your container for tablets */
+    }
+  
+    /* Add any other styles or adjustments specific to tablets */
+  }
+  @media only screen and (min-width: 1025px) {
+    /* CSS rules for laptop/desktop devices */
+    body {
+      font-size: 18px; /* Adjust font size for larger screens */
+    }
+  
+    .container {
+      width: 60%; /* Adjust the width of your container for larger screens */
+    }
+  
+    /* Add any other styles or adjustments specific to laptops/desktops */
+  }
+  
+  

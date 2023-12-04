@@ -1,0 +1,200 @@
+/* nav bar  */
+.navbar {
+    background-color: #ffd700;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 1px 2px; */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+.logo img{
+    margin: 0;
+    padding: 0;
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.nav-links {
+    list-style-type: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    font-size: larger;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: yellowgreen;
+    
+}
+body{
+  background-color: aqua;
+    
+}
+
+/* Style the page content */
+.content {
+    padding: 20px;
+    color: #fff;
+}
+/* body page */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    perspective: 1000px;
+    /* background-color: #EADDCA; */
+  }
+
+  .contact-form {
+    width: 50%;
+    padding: 20px;
+    /* background-color: #EADDCA; */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease;
+    color: azure;
+  }
+
+  .contact-info {
+    width: 40%;
+    padding: 20px;
+    /* background-color: #8B8000; */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease;
+    color: azure;
+
+  }
+
+  .contact-container:hover .contact-form {
+    transform: rotateY(360deg);
+  }
+
+  .contact-container:hover .contact-info {
+    transform: rotateY(360deg);
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  input, textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .contactForm button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: 2px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    
+  }
+
+  .contactForm button:hover {
+    background-color: #0056b3;
+    
+  }
+
+  footer {
+    display: flex;
+    background-color: #ffd700;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+   
+    
+  }
+  footer p{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    /* //margin-left: 2rem; */
+    cursor: pointer;
+
+  }
+  footer p a img{
+      
+  padding: 5px;
+    border-radius: 50%;
+    margin-right: 8px;
+    text-align: center;
+
+
+  }
+
+  video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire viewport */
+    z-index: -1; /* Place it behind other elements */
+  }
+  /* Example of a media query for mobile devices */
+@media only screen and (max-width: 600px) {
+  /* CSS rules for mobile devices */
+  .container {
+      width: 100%;
+      max-width: 1200px; /* Optional: Set a maximum width */
+      margin: 0 auto; /* Center the container */
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+}
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  /* CSS rules for tablet devices */
+  body {
+    font-size: 16px; /* Adjust font size for tablets */
+  }
+
+  .container {
+    width: 80%; /* Adjust the width of your container for tablets */
+  }
+
+  /* Add any other styles or adjustments specific to tablets */
+}
+@media only screen and (min-width: 1025px) {
+  /* CSS rules for laptop/desktop devices */
+  body {
+    font-size: 18px; /* Adjust font size for larger screens */
+  }
+
+  .container {
+    width: 60%; /* Adjust the width of your container for larger screens */
+  }
+
+  /* Add any other styles or adjustments specific to laptops/desktops */
+}
+
+

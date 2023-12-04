@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@MyWebSte#</title>
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="chat.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <p>Software Developer | Web Enthusiast</p>
+    </header>
+    <nav class="navbar">
+        
+        <div class="logo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcbazXKNizk7gQkGXMoZdFfOhPB43n-13Gzg&usqp=CAU">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="projects.html">Skills</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="Bflex">
+    <div class="content">
+        <h2>Hello;</h2>
+        <h3>I am Vivek Virade,</h3>
+        <p> a passionate web developer with a love for creating interactive and user-friendly websites. I have a strong foundation in web technologies such as <mark>HTML, CSS, and JavaScript,</mark> and I'm always eager to learn and adapt to new challenges.
+        </p>
+
+        <div>
+            <p>Click Here for Download CV</p>
+            <!-- <p><div id="text-container">Click Here for </div>Download CV</p> -->
+            <a href="img/cv/Vicky(C.V.)..docx" class="download-button">Download CV</a>         
+       </div>
+       
+    </div>
+    <div>
+        <!-- <img src="https://i.pinimg.com/1200x/35/99/46/35994674e7070068f37652809804f94d.jpg"> -->
+        <img src="c:\Users\vivek\Desktop\Model_3\Img\vivekWhitedress.jpeg">
+        <div id="text-container">Building Websites, Building Business</div>
+    </div>
+    <div>
+        <span style="color: whitesmoke;"><h2>My Skills</h2>
+        <ul>  
+            <li>HTML5 and CSS3</li>
+            <li>JavaScript and jQuery</li>
+            <li>Responsive Web Design</li>
+            <li>Front-End Frameworks (e.g., Bootstrap)</li>
+            <li>Web Accessibility</li>
+            <li>Version Control (e.g., Git/GitHub)</li>
+            <li>Problem-Solving and Debugging</li>
+        </ul>
+        <h2>Contact Me</h2>
+        <p>
+            Feel free to get in touch with me to discuss your web development needs. I'm excited to collaborate on your next project!
+        </p></span>
+    </div>
+    
+</div>
+<!-- <marquee behavior="scroll" direction="right" class="text-xs" >
+    <p>
+         <span style="color: whitesmoke;">I'm Web Developer</span>
+         <div id="text-container">I'm Web Developer</div>
+      </p>
+ </marquee> -->
+    <footer>
+        
+        <h2 class="dot">Contact Me</h2>
+        <ul class="contact-icons">
+            <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+            <!-- <li><a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a></li> -->
+            <li><a  href="mailto:vvirade@email.com"><i class="fa fa-envelope"></i></a></li>
+            <li><a href="https://www.linkedin.com/feed/"><i class="fa fa-linkedin"></i></a></li>
+        </ul>          
+    </footer>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const textContainer = document.getElementById('text-container');
+      const text = textContainer.innerText;
+      let index = 0;
+      let fontSize = 54;
+
+      function updateText() {
+        textContainer.innerText = text.slice(0, index);
+        index++;
+
+        if (index > text.length) {
+          index = 0; // Reset the index when it reaches the end
+        }
+
+        setTimeout(updateText, 100); // Adjust the delay (in milliseconds) as needed
+      }
+
+      updateText();
+    });
+  </script>
+</body>
+</html>

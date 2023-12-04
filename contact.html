@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <title>Contact Page</title>
+  <link rel="stylesheet" href="contact.css">
+  <!-- <link rel="stylesheet" href="contact.css"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="logo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcbazXKNizk7gQkGXMoZdFfOhPB43n-13Gzg&usqp=CAU">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="projects.html">Skills</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="contact-container">
+        <div class="contact-form">
+          <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+      
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+      
+            <label for="telephone">Telephone:</label>
+            <input type="tel" id="telephone" name="telephone" required>
+      
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+      
+            <!-- <button type="submit" onclick="validateForm()">Send </button> -->
+            <button type="submit" class="btn btn-primary custom-btn">Send</button>
+          </form>
+        </div>
+      
+        <div class="contact-info">
+          <p>My Contact Info:</p>
+          <p><strong>Name:</strong> Vivek Virade</p>
+          <p><strong>Email:</strong> vvirade@gmail.co</p>
+          <p><strong>Telephone:</strong> 8432077959</p>
+      
+        </div>
+      </div>
+      
+      <footer>
+        
+          <p>Contact Links: 
+            <a onclick="openEmailForm()" title="Email"><img src="https://cdn-icons-png.flaticon.com/512/10505/10505896.png" alt="Email" height="40px" width="40px"></a> 
+            <a onclick="openWhatsApp()" title="WhatsApp"><img src="https://i.pinimg.com/736x/79/dc/31/79dc31280371b8ffbe56ec656418e122.jpg" alt="WhatsApp" height="40px" width="40px"></a> 
+            <a id="linkedinButton" onclick="openLinkedIn()" title="LinkedIn"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/600px-LinkedIn_logo_initials.png?20140125013055" alt="LinkedIn" height="40px" width="40px"></a>
+            <a href="https://www.facebook.com/" title="Facebook"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/2048px-Facebook_icon.svg.png" alt="Facebook" height="40px" width="40px"></a> 
+            <!-- <a href="#" title="Twitter"><img src="https://img.freepik.com/premium-vector/twitter-icon-paper-cut-style-social-media-icons_505135-257.jpg" alt="Twitter" height="40px" width="40px"></a>  -->
+            <!-- <a href="#" title="Instagram"><img src="https://img.freepik.com/premium-vector/instagram-icon-paper-cut-style-social-media-icons_505135-235.jpg" alt="Instagram" height="40px" width="40px"></a> -->
+          </p>
+        
+      </footer>
+      
+      <script src="contact.js"></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<video autoplay muted loop>
+  <source src="https://player.vimeo.com/external/356681749.sd.mp4?s=eb7a8a544e50840e3865da815fded0ea4b32e146&profile_id=164&oauth2_token_id=57447761" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+</body>
+</html>
